@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1665903446353" clover="3.2.0">
-  <project timestamp="1665903446354" name="All files">
-    <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2" elements="9" coveredelements="9" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
-    <file name="playground.js" path="/home/james/Dropbox/vuemasterclass/src/playground.js">
-      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="2" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="9" count="1" type="stmt"/>
+<coverage generated="1665906510481" clover="3.2.0">
+  <project timestamp="1665906510481" name="All files">
+    <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="16" coveredelements="16" complexity="0" loc="14" ncloc="14" packages="1" files="1" classes="1"/>
+    <file name="MainNav.vue" path="/home/james/Dropbox/vuemasterclass/src/components/MainNav.vue">
+      <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
+      <line num="39" count="1" type="stmt"/>
+      <line num="40" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
