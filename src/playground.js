@@ -1,6 +1,5 @@
-const nam = "james";
-const names = {
-  [nam]: true,
-};
+const interval = setInterval(() => {
+  console.log("here");
+}, 2000);
 
-console.log(names);
+console.log(interval);
