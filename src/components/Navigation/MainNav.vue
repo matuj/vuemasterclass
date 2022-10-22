@@ -38,9 +38,9 @@
 </template>
 
 <script>
-import ActionButton from "@/components/ActionButton.vue";
-import ProfileImage from "@/components/ProfileImage.vue";
-import Subnav from "@/components/Subnav.vue";
+import ActionButton from "@/components/Shared/ActionButton.vue";
+import ProfileImage from "@/components/Navigation/ProfileImage.vue";
+import Subnav from "@/components/Navigation/Subnav.vue";
 
 export default {
   name: "MainNav",
@@ -51,12 +51,12 @@ export default {
   },
   data() {
     return {
-      company: "DayDream Careers",
+      company: "Dream Careers",
       url: "https://careers.google.com",
       menuItems: [
         "Teams",
         "Locations",
-        "Life at DayDream",
+        "Life at Dream",
         "How we hire",
         "Students",
         "Jobs",

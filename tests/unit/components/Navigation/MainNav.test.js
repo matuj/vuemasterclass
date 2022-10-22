@@ -1,10 +1,10 @@
 import { shallowMount } from "@vue/test-utils";
-import MainNav from "@/components/MainNav.vue";
+import MainNav from "@/components/Navigation/MainNav.vue";
 
 describe("MainNav", () => {
   it("Displays company name", () => {
     const wrapper = shallowMount(MainNav);
-    expect(wrapper.text()).toMatch("DayDream Careers");
+    expect(wrapper.text()).toMatch("Dream Careers");
   });
 
   it("Displays menu items for navigation", () => {
@@ -14,7 +14,7 @@ describe("MainNav", () => {
     expect(navMenuTexts).toEqual([
       "Teams",
       "Locations",
-      "Life at DayDream",
+      "Life at Dream",
       "How we hire",
       "Students",
       "Jobs",

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="mb-16">
     <h1 class="font-bold tracking-tighter text-8xl mb-14">
       <span :class="actionClasses" data-test="action-verb">{{ action }}</span
       ><br />for everyone
