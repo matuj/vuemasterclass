@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1666525712093" clover="3.2.0">
-  <project timestamp="1666525712093" name="All files">
-    <metrics statements="87" coveredstatements="87" conditionals="10" coveredconditionals="10" methods="14" coveredmethods="14" elements="111" coveredelements="111" complexity="0" loc="87" ncloc="87" packages="4" files="7" classes="7"/>
+<coverage generated="1666533892556" clover="3.2.0">
+  <project timestamp="1666533892556" name="All files">
+    <metrics statements="88" coveredstatements="88" conditionals="10" coveredconditionals="10" methods="15" coveredmethods="15" elements="113" coveredelements="113" complexity="0" loc="88" ncloc="88" packages="4" files="7" classes="7"/>
     <package name="components.JobSearch">
       <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="Headline.vue" path="/home/james/Dropbox/vuemasterclass/src/components/JobSearch/Headline.vue">
@@ -22,29 +22,30 @@
       </file>
     </package>
     <package name="components.Navigation">
-      <metrics statements="46" coveredstatements="46" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
+      <metrics statements="47" coveredstatements="47" conditionals="6" coveredconditionals="6" methods="7" coveredmethods="7"/>
       <file name="MainNav.vue" path="/home/james/Dropbox/vuemasterclass/src/components/Navigation/MainNav.vue">
-        <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <metrics statements="21" coveredstatements="21" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
         <line num="62" count="1" type="stmt"/>
-        <line num="64" count="1" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
         <line num="67" count="1" type="stmt"/>
-        <line num="68" count="1" type="stmt"/>
-        <line num="69" count="1" type="stmt"/>
-        <line num="72" count="1" type="stmt"/>
-        <line num="75" count="1" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
         <line num="76" count="1" type="stmt"/>
         <line num="79" count="1" type="stmt"/>
-        <line num="82" count="1" type="stmt"/>
-        <line num="86" count="1" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
+        <line num="87" count="7" type="stmt"/>
+        <line num="88" count="7" type="stmt"/>
+        <line num="89" count="7" type="stmt"/>
         <line num="90" count="7" type="stmt"/>
         <line num="91" count="7" type="stmt"/>
-        <line num="92" count="7" type="stmt"/>
-        <line num="93" count="7" type="stmt"/>
-        <line num="99" count="42" type="stmt"/>
-        <line num="117" count="1" type="stmt"/>
+        <line num="99" count="5" type="stmt"/>
+        <line num="102" count="42" type="stmt"/>
+        <line num="120" count="1" type="stmt"/>
       </file>
       <file name="ProfileImage.vue" path="/home/james/Dropbox/vuemasterclass/src/components/Navigation/ProfileImage.vue">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
