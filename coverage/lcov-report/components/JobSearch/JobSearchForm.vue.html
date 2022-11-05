@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for components/JobSearch/Headline.vue</title>
+    <title>Code coverage report for components/JobSearch/JobSearchForm.vue</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">components/JobSearch</a> Headline.vue</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">components/JobSearch</a> JobSearchForm.vue</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>13/13</span>
+                <span class='fraction'>22/22</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>13/13</span>
+                <span class='fraction'>22/22</span>
             </div>
         
             
@@ -122,7 +122,11 @@
 <a name='L57'></a><a href='#L57'>57</a>
 <a name='L58'></a><a href='#L58'>58</a>
 <a name='L59'></a><a href='#L59'>59</a>
-<a name='L60'></a><a href='#L60'>60</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -130,7 +134,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -181,65 +185,73 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
-  &lt;section class="mb-16"&gt;
-    &lt;h1 class="font-bold tracking-tighter text-8xl mb-14"&gt;
-      &lt;span :class="actionClasses" data-test="action-verb"&gt;{{ action }}&lt;/span
-      &gt;&lt;br /&gt;for everyone
-    &lt;/h1&gt;
-    &lt;h2 class="text-3xl font-light"&gt;Find your next job at Dream&lt;/h2&gt;
-  &lt;/section&gt;
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;form
+    class="flex items-center w-full h-14 mt-14 border border-solid border-brand-gray-3 rounded-3xl"
+    @submit.prevent="searchForJobs"
+  &gt;
+    &lt;font-awesome-icon :icon="['fas', 'search']" class="ml-4 mr-3" /&gt;
+    &lt;div class="flex flex-nowrap flex-1 h-full text-base font-light"&gt;
+      &lt;div class="relative flex items-center flex-1 h-full pr-3"&gt;
+        &lt;label class="absolute left-0 -top-10"&gt;Role&lt;/label&gt;
+        &lt;TextInput
+          v-model="role"
+          placeholder="Software engineer"
+          data-test="role-input"
+        /&gt;
+      &lt;/div&gt;
+      &lt;span
+        class="flex items-center h-full px-3 border-l border-r border-brand-gray-3 bg-brand-gray-2"
+        &gt;in&lt;/span
+      &gt;
+      &lt;div class="relative flex items-center flex-1 h-full pl-3"&gt;
+        &lt;label class="absolute left-0 -top-10"&gt;Where?&lt;/label&gt;
+        &lt;TextInput
+          v-model="location"
+          placeholder="Los Angeles"
+          data-test="location-input"
+        /&gt;
+      &lt;/div&gt;
+      &lt;ActionButton
+        text="Search"
+        type="secondary"
+        class="rounded-r-3xl"
+        data-test="form-submit-button"
+      /&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
 &lt;/template&gt;
 &nbsp;
 &lt;script&gt;
-import nextElementInList from "@/utils/nextElementInList";
+import ActionButton from "@/components/Shared/ActionButton.vue";
+import TextInput from "@/components/Shared/TextInput.vue";
 &nbsp;
 export default {
-  name: "Headline",
+  name: "JobSearchForm",
+  components: {
+    ActionButton,
+    TextInput,
+  },
   data() {
     return {
-      action: "Build",
-      interval: null,
+      role: "",
+      location: "",
     };
   },
-  computed: {
-    actionClasses() {
-      return {
-        [this.action.toLowerCase()]: true,
-      };
-    },
-  },
-  created() {
-    this.changeTitle();
-  },
-  beforeUnmount() {
-    clearInterval(this.interval);
-  },
   methods: {
-    changeTitle() {
-      this.interval = setInterval(() =&gt; {
-        const actions = ["Build", "Create", "Design", "Code"];
-        this.action = nextElementInList(actions, this.action);
-      }, 3000);
+    searchForJobs() {
+      this.$router.push({
+        name: "JobResults",
+        query: { role: this.role, location: this.location },
+      });
     },
   },
 };
 &lt;/script&gt;
-&nbsp;
-&lt;style scoped&gt;
-.build {
-  color: #1a73e8;
-}
-.create {
-  color: #34a853;
-}
-.design {
-  color: #f9ab00;
-}
-.code {
-  color: #d93025;
-}
-&lt;/style&gt;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

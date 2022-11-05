@@ -1,5 +1,11 @@
-const interval = setInterval(() => {
-  console.log("here");
-}, 2000);
+const axios = require("axios");
+//import axios from "axios";
 
-console.log(interval);
+const url = "http://localhost:3000/jobs";
+
+const fetchv2 = async () => {
+  const response = await axios.get(url);
+  console.log(response.data);
+};
+
+fetchv2();
