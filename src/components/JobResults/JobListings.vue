@@ -68,7 +68,7 @@ export default {
     ...mapState(["jobs"]),
   },
   async mounted() {
-    this.FETCH_JOBS;
+    this.FETCH_JOBS();
   },
   methods: {
     ...mapActions([FETCH_JOBS]),
