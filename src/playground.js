@@ -1,3 +1,2 @@
-const sushi = ["tuna", "salmon", "eel", "shrimp", "octopus", "uni"];
-
-console.log(sushi.slice(2, 4));
+const nums = [1, 3, 5, 7, 9, 2, 6];
+console.log(nums.filter((num) => num > 6));

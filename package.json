@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit --transformIgnorePatterns \"node_modules/(?!axios)/\"",
+    "test:unit": "vue-cli-service test:unit --coverage --transformIgnorePatterns \"node_modules/(?!axios)/\"",
     "lint": "vue-cli-service lint",
     "backend": "json-server --watch db.json",
     "test:watch": "vue-cli-service test:unit --watch --transformIgnorePatterns \"node_modules/(?!axios)/\""
