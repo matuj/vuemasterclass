@@ -1,9 +1,9 @@
 import { mount } from "@vue/test-utils";
 
-import JobFiltersSidebarOrganizations from "@/components/JobResults/JobFiltersSidebar/JobFiltersSidebarOrganizations.vue";
-import { UNIQUE_ORGANIZATIONS } from "@/store/constants";
+import JobFiltersSidebarJobTypes from "@/components/JobResults/JobFiltersSidebar/JobFiltersSidebarJobTypes.vue";
+import { UNIQUE_JOB_TYPES } from "@/store/constants";
 
-describe("JobFiltersSidebarOrganizations", () => {
+describe("JobFiltersSidebarJobTypes", () => {
   const createConfig = ($store, $router) => ({
     global: {
       mocks: {
@@ -16,23 +16,23 @@ describe("JobFiltersSidebarOrganizations", () => {
     },
   });
 
-  it("renders unique list of organizations for filtering jobs", async () => {
+  it("renders unique list of job types for filtering jobs", async () => {
     const $store = {
       getters: {
-        [UNIQUE_ORGANIZATIONS]: new Set(["google", "amazon"]),
+        [UNIQUE_JOB_TYPES]: new Set(["fulltime", "parttime"]),
       },
     };
     const $router = {
-      push: jest.fn,
+      push: jest.fn(),
     };
     const wrapper = mount(
-      JobFiltersSidebarOrganizations,
+      JobFiltersSidebarJobTypes,
       createConfig($store, $router)
     );
     await wrapper.find("[data-test='clickable-area']").trigger("click");
-    const organizationsLabels = wrapper.findAll("[data-test='organization']");
-    const organizations = organizationsLabels.map((node) => node.text());
-    expect(organizations).toEqual(["google", "amazon"]);
+    const jobTypesLabels = wrapper.findAll("[data-test='job-type']");
+    const jobTypes = jobTypesLabels.map((node) => node.text());
+    expect(jobTypes).toEqual(["fulltime", "parttime"]);
   });
 
   describe("when user clicks checkbox", () => {
@@ -40,7 +40,7 @@ describe("JobFiltersSidebarOrganizations", () => {
       const commit = jest.fn();
       const $store = {
         getters: {
-          [UNIQUE_ORGANIZATIONS]: new Set(["google", "amazon"]),
+          [UNIQUE_JOB_TYPES]: new Set(["fulltime", "parttime"]),
         },
         commit,
       };
@@ -48,39 +48,36 @@ describe("JobFiltersSidebarOrganizations", () => {
         push: jest.fn(),
       };
       const wrapper = mount(
-        JobFiltersSidebarOrganizations,
+        JobFiltersSidebarJobTypes,
         createConfig($store, $router)
       );
       await wrapper.find("[data-test='clickable-area']").trigger("click");
 
-      const googleInput = wrapper.find("[data-test='google']");
-      await googleInput.setChecked();
+      const fulltimeInput = wrapper.find("[data-test='fulltime']");
+      await fulltimeInput.setChecked();
 
-      expect(commit).toHaveBeenCalledWith("ADD_SELECTED_ORGANIZATIONS", [
-        "google",
+      expect(commit).toHaveBeenCalledWith("ADD_SELECTED_JOB_TYPES", [
+        "fulltime",
       ]);
     });
 
     it("navigates user to top level job results page", async () => {
       const push = jest.fn();
-      const commit = jest.fn();
       const $store = {
         getters: {
-          [UNIQUE_ORGANIZATIONS]: new Set(["google", "amazon"]),
+          [UNIQUE_JOB_TYPES]: new Set(["fulltime", "parttime"]),
         },
-        commit,
+        commit: jest.fn(),
       };
-      const $router = {
-        push,
-      };
+      const $router = { push };
       const wrapper = mount(
-        JobFiltersSidebarOrganizations,
+        JobFiltersSidebarJobTypes,
         createConfig($store, $router)
       );
       await wrapper.find("[data-test='clickable-area']").trigger("click");
 
-      const googleInput = wrapper.find("[data-test='google']");
-      await googleInput.setChecked();
+      const fulltimeInput = wrapper.find("[data-test='fulltime']");
+      await fulltimeInput.setChecked();
 
       expect(push).toHaveBeenCalledWith({ name: "JobResults" });
     });
