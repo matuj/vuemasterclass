@@ -18,8 +18,21 @@
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
   name: "Accordion",
+
+  setup() {
+    const header = ref("my header");
+    const open = () => {
+      header.value = "other";
+    };
+
+    return { header, open };
+  },
+
+  /**
   props: {
     header: {
       type: String,
@@ -41,5 +54,6 @@ export default {
       this.isOpen = !this.isOpen;
     },
   },
+  */
 };
 </script>
