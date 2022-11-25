@@ -18,42 +18,30 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { computed, ref } from "vue";
 
 export default {
   name: "Accordion",
 
-  setup() {
-    const header = ref("my header");
-    const open = () => {
-      header.value = "other";
-    };
-
-    return { header, open };
-  },
-
-  /**
   props: {
     header: {
       type: String,
       required: true,
     },
   },
-  data() {
-    return {
-      isOpen: false,
+
+  setup() {
+    const isOpen = ref(false);
+
+    const open = () => {
+      isOpen.value = !isOpen.value;
     };
+
+    const caretIcon = computed(() =>
+      isOpen.value ? ["fas", "angle-up"] : ["fas", "angle-down"]
+    );
+
+    return { open, isOpen, caretIcon };
   },
-  computed: {
-    caretIcon() {
-      return this.isOpen ? ["fas", "angle-up"] : ["fas", "angle-down"];
-    },
-  },
-  methods: {
-    open() {
-      this.isOpen = !this.isOpen;
-    },
-  },
-  */
 };
 </script>
