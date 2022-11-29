@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for components/Navigation/MainNav.vue</title>
+    <title>Code coverage report for components/JobResults/JobFiltersSidebar/JobFiltersSidebarCheckboxGroup.vue</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../prettify.css" />
-    <link rel="stylesheet" href="../../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../sort-arrow-sprite.png);
+            background-image: url(../../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">components/Navigation</a> MainNav.vue</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">components/JobResults/JobFiltersSidebar</a> JobFiltersSidebarCheckboxGroup.vue</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>22/22</span>
+                <span class='fraction'>19/19</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>22/22</span>
+                <span class='fraction'>19/19</span>
             </div>
         
             
@@ -129,24 +129,7 @@
 <a name='L64'></a><a href='#L64'>64</a>
 <a name='L65'></a><a href='#L65'>65</a>
 <a name='L66'></a><a href='#L66'>66</a>
-<a name='L67'></a><a href='#L67'>67</a>
-<a name='L68'></a><a href='#L68'>68</a>
-<a name='L69'></a><a href='#L69'>69</a>
-<a name='L70'></a><a href='#L70'>70</a>
-<a name='L71'></a><a href='#L71'>71</a>
-<a name='L72'></a><a href='#L72'>72</a>
-<a name='L73'></a><a href='#L73'>73</a>
-<a name='L74'></a><a href='#L74'>74</a>
-<a name='L75'></a><a href='#L75'>75</a>
-<a name='L76'></a><a href='#L76'>76</a>
-<a name='L77'></a><a href='#L77'>77</a>
-<a name='L78'></a><a href='#L78'>78</a>
-<a name='L79'></a><a href='#L79'>79</a>
-<a name='L80'></a><a href='#L80'>80</a>
-<a name='L81'></a><a href='#L81'>81</a>
-<a name='L82'></a><a href='#L82'>82</a>
-<a name='L83'></a><a href='#L83'>83</a>
-<a name='L84'></a><a href='#L84'>84</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L67'></a><a href='#L67'>67</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -154,24 +137,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -230,85 +196,68 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
-  &lt;header :class="['w-full', 'text-sm', headerHeightClass]"&gt;
-    &lt;div class="fixed top-0 left-0 w-full h-16 bg-white"&gt;
-      &lt;div
-        class="flex flex-nowrap h-full px-8 py-y mx-auto border-b border-solid border-brand-gray-1"
-      &gt;
-        &lt;router-link
-          :to="{ name: 'Home' }"
-          class="flex items-center h-full text-xl"
-          &gt;Dream Careers&lt;/router-link
-        &gt;
-        &lt;nav class="h-full ml-12"&gt;
-          &lt;ul class="flex h-full p-0 m-0 list-none"&gt;
-            &lt;li
-              v-for="menuItem in menuItems"
-              :key="menuItem.text"
-              class="h-full ml-9 first:ml-0"
-              data-test="main-nav-list-item"
-            &gt;
-              &lt;router-link
-                :to="menuItem.url"
-                class="flex items-center h-full py-2.5"
-                &gt;{{ menuItem.text }}&lt;/router-link
-              &gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/nav&gt;
-        &lt;div class="flex items-center h-full ml-auto"&gt;
-          &lt;ProfileImage v-if="isLoggedIn" data-test="profile-image" /&gt;
-          &lt;ActionButton
-            v-else
-            text="Sign in"
-            type="primary"
-            data-test="login-button"
-            @click="LOGIN_USER()"
-          /&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;Subnav v-if="isLoggedIn" data-test="subnav" /&gt;
+  &lt;accordion :header="header"&gt;
+    &lt;div class="mt-5"&gt;
+      &lt;fieldset&gt;
+        &lt;ul class="flex flex-row flex-wrap"&gt;
+          &lt;li v-for="value in uniqueValues" :key="value" class="w-1/2 h-8"&gt;
+            &lt;input
+              :id="value"
+              v-model="selectedValues"
+              :value="value"
+              type="checkbox"
+              class="mr-3"
+              :data-test="value"
+              @change="selectValue"
+            /&gt;
+            &lt;label :for="value" data-test="value"&gt;{{ value }}&lt;/label&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/fieldset&gt;
     &lt;/div&gt;
-  &lt;/header&gt;
+  &lt;/accordion&gt;
 &lt;/template&gt;
 &nbsp;
 &lt;script&gt;
-import { mapMutations, mapState } from "vuex";
-import ActionButton from "@/components/Shared/ActionButton.vue";
-import ProfileImage from "@/components/Navigation/ProfileImage.vue";
-import Subnav from "@/components/Navigation/Subnav.vue";
-import { LOGIN_USER } from "@/store/constants";
+import { ref } from "vue";
+import { useStore } from "vuex";
+import { useRouter } from "vue-router";
+&nbsp;
+import Accordion from "@/components/Shared/Accordion.vue";
 &nbsp;
 export default {
-  name: "MainNav",
+  name: "JobFiltersSidebarCheckboxGroup",
   components: {
-    ActionButton,
-    ProfileImage,
-    Subnav,
+    Accordion,
   },
-  data() {
-    return {
-      menuItems: [
-        { text: "Teams", url: "/teams" },
-        { text: "Locations", url: "/" },
-        { text: "Life at Dream", url: "/" },
-        { text: "How we hire", url: "/" },
-        { text: "Students", url: "/" },
-        { text: "Jobs", url: "/jobs/results" },
-      ],
-    };
-  },
-  computed: {
-    headerHeightClass() {
-      return {
-        "h-16": !this.isLoggedIn,
-        "h-32": this.isLoggedIn,
-      };
+  props: {
+    header: {
+      type: String,
+      required: true,
     },
-    ...mapState(["isLoggedIn"]),
+    uniqueValues: {
+      type: Set,
+      required: true,
+    },
+    mutation: {
+      type: String,
+      required: true,
+    },
   },
-  methods: {
-    ...mapMutations([LOGIN_USER]),
+&nbsp;
+  setup(props) {
+    const store = useStore();
+    const router = useRouter();
+&nbsp;
+    const selectedValues = ref([]);
+    // const uniqueValues = useUniqueOrganizations();
+&nbsp;
+    const selectValue = () =&gt; {
+      store.commit(props.mutation, selectedValues.value);
+      router.push({ name: "JobResults" });
+    };
+&nbsp;
+    return { selectedValues, selectValue };
   },
 };
 &lt;/script&gt;
@@ -321,14 +270,14 @@ export default {
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
                 at 2022-11-29T09:23:35.631Z
             </div>
-        <script src="../../prettify.js"></script>
+        <script src="../../../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../../sorter.js"></script>
-        <script src="../../block-navigation.js"></script>
+        <script src="../../../sorter.js"></script>
+        <script src="../../../block-navigation.js"></script>
     </body>
 </html>
     

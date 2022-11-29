@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1669355548634" clover="3.2.0">
-  <project timestamp="1669355548634" name="All files">
-    <metrics statements="279" coveredstatements="279" conditionals="46" coveredconditionals="46" methods="74" coveredmethods="74" elements="399" coveredelements="399" complexity="0" loc="279" ncloc="279" packages="9" files="23" classes="23"/>
+<coverage generated="1669713815670" clover="3.2.0">
+  <project timestamp="1669713815670" name="All files">
+    <metrics statements="263" coveredstatements="260" conditionals="42" coveredconditionals="37" methods="71" coveredmethods="68" elements="376" coveredelements="365" complexity="0" loc="263" ncloc="263" packages="9" files="23" classes="23"/>
     <package name="api">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="getJobs.js" path="/home/james/Dropbox/vuemasterclass/src/api/getJobs.js">
@@ -13,7 +13,7 @@
       </file>
     </package>
     <package name="components.JobResults">
-      <metrics statements="43" coveredstatements="43" conditionals="4" coveredconditionals="4" methods="10" coveredmethods="10"/>
+      <metrics statements="43" coveredstatements="40" conditionals="4" coveredconditionals="0" methods="10" coveredmethods="7"/>
       <file name="JobListing.vue" path="/home/james/Dropbox/vuemasterclass/src/components/JobResults/JobListing.vue">
         <metrics statements="24" coveredstatements="24" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
         <line num="4" count="2" type="stmt"/>
@@ -42,73 +42,51 @@
         <line num="82" count="2" type="stmt"/>
       </file>
       <file name="JobListings.vue" path="/home/james/Dropbox/vuemasterclass/src/components/JobResults/JobListings.vue">
-        <metrics statements="19" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+        <metrics statements="19" coveredstatements="16" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="1"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
-        <line num="80" count="1" type="stmt"/>
-        <line num="82" count="1" type="stmt"/>
-        <line num="85" count="1" type="stmt"/>
-        <line num="86" count="1" type="stmt"/>
-        <line num="87" count="1" type="stmt"/>
-        <line num="90" count="1" type="stmt"/>
-        <line num="93" count="1" type="stmt"/>
-        <line num="96" count="1" type="stmt"/>
-        <line num="99" count="1" type="stmt"/>
-        <line num="103" count="8" type="stmt"/>
-        <line num="104" count="8" type="stmt"/>
-        <line num="105" count="8" type="stmt"/>
-        <line num="106" count="30" type="stmt"/>
-        <line num="122" count="4" type="stmt"/>
-        <line num="135" count="2" type="stmt"/>
-        <line num="138" count="1" type="stmt"/>
+        <line num="114" count="1" type="stmt"/>
+        <line num="116" count="1" type="stmt"/>
+        <line num="119" count="1" type="stmt"/>
+        <line num="120" count="1" type="stmt"/>
+        <line num="121" count="1" type="stmt"/>
+        <line num="124" count="1" type="stmt"/>
+        <line num="127" count="1" type="stmt"/>
+        <line num="130" count="1" type="stmt"/>
+        <line num="133" count="1" type="stmt"/>
+        <line num="137" count="8" type="stmt"/>
+        <line num="138" count="8" type="stmt"/>
+        <line num="139" count="8" type="stmt"/>
+        <line num="140" count="0" type="stmt"/>
+        <line num="156" count="0" type="stmt"/>
+        <line num="169" count="0" type="stmt"/>
+        <line num="172" count="1" type="stmt"/>
       </file>
     </package>
     <package name="components.JobResults.JobFiltersSidebar">
-      <metrics statements="38" coveredstatements="38" conditionals="12" coveredconditionals="12" methods="10" coveredmethods="10"/>
-      <file name="JobFiltersSidebarJobTypes.vue" path="/home/james/Dropbox/vuemasterclass/src/components/JobResults/JobFiltersSidebar/JobFiltersSidebarJobTypes.vue">
+      <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="5"/>
+      <file name="JobFiltersSidebarCheckboxGroup.vue" path="/home/james/Dropbox/vuemasterclass/src/components/JobResults/JobFiltersSidebar/JobFiltersSidebarCheckboxGroup.vue">
         <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="5"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
+        <line num="84" count="1" type="stmt"/>
         <line num="86" count="1" type="stmt"/>
-        <line num="88" count="1" type="stmt"/>
+        <line num="89" count="1" type="stmt"/>
+        <line num="90" count="1" type="stmt"/>
         <line num="91" count="1" type="stmt"/>
-        <line num="92" count="1" type="stmt"/>
-        <line num="93" count="1" type="stmt"/>
-        <line num="96" count="1" type="stmt"/>
-        <line num="99" count="1" type="stmt"/>
-        <line num="100" count="1" type="stmt"/>
-        <line num="102" count="3" type="stmt"/>
-        <line num="103" count="3" type="stmt"/>
-        <line num="106" count="5" type="stmt"/>
-        <line num="107" count="10" type="stmt"/>
-        <line num="112" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="118" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="128" count="1" type="stmt"/>
-      </file>
-      <file name="JobFiltersSidebarOrganizations.vue" path="/home/james/Dropbox/vuemasterclass/src/components/JobResults/JobFiltersSidebar/JobFiltersSidebarOrganizations.vue">
-        <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="5"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="86" count="1" type="stmt"/>
-        <line num="88" count="1" type="stmt"/>
-        <line num="91" count="1" type="stmt"/>
-        <line num="92" count="1" type="stmt"/>
-        <line num="93" count="1" type="stmt"/>
-        <line num="96" count="1" type="stmt"/>
-        <line num="99" count="1" type="stmt"/>
-        <line num="100" count="1" type="stmt"/>
-        <line num="102" count="3" type="stmt"/>
-        <line num="103" count="3" type="stmt"/>
-        <line num="106" count="5" type="stmt"/>
-        <line num="107" count="6" type="stmt"/>
-        <line num="112" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="118" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="128" count="1" type="stmt"/>
+        <line num="94" count="1" type="stmt"/>
+        <line num="97" count="1" type="stmt"/>
+        <line num="98" count="1" type="stmt"/>
+        <line num="100" count="3" type="stmt"/>
+        <line num="101" count="3" type="stmt"/>
+        <line num="104" count="5" type="stmt"/>
+        <line num="105" count="6" type="stmt"/>
+        <line num="110" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="116" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="126" count="1" type="stmt"/>
       </file>
     </package>
     <package name="components.JobSearch">
@@ -159,13 +137,13 @@
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="36" count="1" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="42" count="6" type="stmt"/>
-        <line num="43" count="3" type="stmt"/>
-        <line num="51" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="58" count="6" type="stmt"/>
+        <line num="59" count="3" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
       </file>
     </package>
     <package name="components.Navigation">
@@ -231,21 +209,21 @@
       <metrics statements="49" coveredstatements="49" conditionals="10" coveredconditionals="10" methods="12" coveredmethods="12"/>
       <file name="Accordion.vue" path="/home/james/Dropbox/vuemasterclass/src/components/Shared/Accordion.vue">
         <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="47" count="3" type="stmt"/>
-        <line num="49" count="3" type="stmt"/>
-        <line num="52" count="3" type="stmt"/>
-        <line num="53" count="3" type="stmt"/>
-        <line num="54" count="3" type="stmt"/>
-        <line num="57" count="3" type="stmt"/>
-        <line num="60" count="3" type="stmt"/>
-        <line num="64" count="3" type="stmt"/>
-        <line num="67" count="20" type="stmt"/>
-        <line num="68" count="20" type="stmt"/>
-        <line num="72" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="53" count="2" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="57" count="2" type="stmt"/>
+        <line num="60" count="2" type="stmt"/>
+        <line num="64" count="2" type="stmt"/>
+        <line num="67" count="12" type="stmt"/>
+        <line num="68" count="12" type="stmt"/>
+        <line num="72" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="76" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="77" count="3" type="stmt"/>
+        <line num="77" count="2" type="stmt"/>
       </file>
       <file name="ActionButton.vue" path="/home/james/Dropbox/vuemasterclass/src/components/Shared/ActionButton.vue">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
@@ -292,12 +270,18 @@
       </file>
     </package>
     <package name="composables">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="4"/>
       <file name="useConfirmRoute.js" path="/home/james/Dropbox/vuemasterclass/src/composables/useConfirmRoute.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
+      </file>
+      <file name="useCurrentPage.js" path="/home/james/Dropbox/vuemasterclass/src/composables/useCurrentPage.js">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="10" type="cond" truecount="1" falsecount="1"/>
       </file>
     </package>
     <package name="store">
@@ -310,28 +294,28 @@
       </file>
       <file name="composables.js" path="/home/james/Dropbox/vuemasterclass/src/store/composables.js">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
-        <line num="10" count="5" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="15" count="5" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="12" count="9" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
-        <line num="20" count="5" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
       </file>
       <file name="constants.js" path="/home/james/Dropbox/vuemasterclass/src/store/constants.js">
         <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="2" count="11" type="stmt"/>
-        <line num="5" count="11" type="stmt"/>
-        <line num="6" count="11" type="stmt"/>
-        <line num="7" count="11" type="stmt"/>
-        <line num="10" count="11" type="stmt"/>
-        <line num="11" count="11" type="stmt"/>
-        <line num="12" count="11" type="stmt"/>
-        <line num="15" count="11" type="stmt"/>
-        <line num="16" count="11" type="stmt"/>
-        <line num="17" count="11" type="stmt"/>
+        <line num="2" count="7" type="stmt"/>
+        <line num="5" count="7" type="stmt"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="12" count="7" type="stmt"/>
+        <line num="15" count="7" type="stmt"/>
+        <line num="16" count="7" type="stmt"/>
+        <line num="17" count="7" type="stmt"/>
       </file>
       <file name="getters.js" path="/home/james/Dropbox/vuemasterclass/src/store/getters.js">
         <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="11" coveredmethods="11"/>
